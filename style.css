@@ -6,7 +6,8 @@
 
 body {
     min-height: 100vh;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
 
     background:
         radial-gradient(circle at 20% 20%, #4c1d95 0%, transparent 25%),
@@ -239,8 +240,9 @@ h1 {
     position: fixed;
     inset: 0;
     width: 100%;
-    min-height: 100vh !important;
-    height: 100vh !important;
+    min-height: 100dvh;
+    height: auto;
+    overflow-y: auto;
 
     z-index: 5;
 
@@ -399,10 +401,10 @@ h1 {
 .letter-container {
     display: grid;
     place-items: center;
-    min-height: 100vh !important;
+    min-height: 100dvh;
     width: 100%;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 40px;
+    padding-bottom: 80px;
 }
 
 
@@ -518,16 +520,18 @@ h1 {
 
     left: 15px;
     right: 15px;
-
-    bottom: 10px;
+    top: 12px;
+    bottom: auto;
 
     height: 205px;
+    min-height: 205px;
 
     z-index: 6;
 
     color: #32104f;
 
     overflow: visible;
+    max-height: none;
 
     transition:
         transform 1.2s ease,
@@ -604,7 +608,9 @@ h1 {
 .letter-content {
     position: relative;
     z-index: 2;
-    padding: 25px 22px 18px;
+    padding: 22px 18px 22px;
+    height: 100%;
+    box-sizing: border-box;
 
     font-family: Georgia, serif;
 
@@ -643,7 +649,7 @@ h1 {
 /* OPEN ENVELOPE */
 
 .envelope.open {
-    transform: translateY(4px) rotate(0.8deg);
+    transform: translateY(12px) rotate(0.8deg);
 }
 
 .envelope.open .envelope-flap {
@@ -653,9 +659,9 @@ h1 {
 }
 
 .envelope.open .letter {
-    transform: translateY(150px) rotate(-1.5deg);
+    transform: translateY(55px) rotate(-1.5deg);
 
-    height: 430px;
+    height: 560px;
 
     z-index: 12;
     filter: drop-shadow(0 18px 28px rgba(49, 16, 79, 0.32));
@@ -674,7 +680,7 @@ h1 {
 /* LETTER HINT */
 
 .letter-hint {
-    margin-top: 35px;
+    margin-top: 280px;
 
     color: #f9a8d4;
 
@@ -799,7 +805,8 @@ h1 {
     .letter {
         left: 12px;
         right: 12px;
-        height: 175px;
+        top: 10px;
+        height: 200px;
     }
 
     .letter-content {
@@ -813,8 +820,8 @@ h1 {
     }
 
     .envelope.open .letter {
-        transform: translateY(-125px);
-        height: 390px;
+        transform: translateY(-35px);
+        height: 590px;
     }
 
     .final-heart {

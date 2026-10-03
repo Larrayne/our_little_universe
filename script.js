@@ -368,7 +368,7 @@ function showLoveYouScreen() {
                 ❤️
             </button>
 
-            <p class="tap-text">Forever yours 💕</p>
+            <p class="tap-text">Forever yours 💕(tap the heart)</p>
 
         </div>
     `;
