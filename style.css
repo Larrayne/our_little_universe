@@ -659,7 +659,7 @@ h1 {
 }
 
 .envelope.open .letter {
-    transform: translateY(55px) rotate(-1.5deg);
+    transform: translateY(-55px) rotate(-1.5deg);
 
     height: 560px;
 
