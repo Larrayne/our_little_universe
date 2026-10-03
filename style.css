@@ -728,3 +728,100 @@ h1 {
     }
 
 }
+/* =========================
+   PHONE / MOBILE DESIGN
+========================= */
+
+@media (max-width: 600px) {
+
+    .welcome {
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+        line-height: 1.2;
+    }
+
+    .instruction {
+        font-size: 1rem;
+        max-width: 280px;
+    }
+
+    .heart-button {
+        font-size: 5.5rem;
+        margin-top: 35px;
+    }
+
+
+    /* QUESTIONS */
+
+    .question-screen {
+        padding: 25px;
+    }
+
+    .question-number {
+        font-size: 0.9rem;
+    }
+
+    .question-screen h2 {
+        font-size: 2.2rem;
+        line-height: 1.2;
+        max-width: 330px;
+    }
+
+    .answers {
+        flex-direction: column;
+        gap: 20px;
+
+        width: 100%;
+    }
+
+    .answers button {
+        width: 200px;
+        min-height: 55px;
+    }
+
+
+    /* ENVELOPE */
+
+    .envelope {
+        width: 290px;
+        height: 200px;
+    }
+
+    .envelope-flap {
+        border-left-width: 145px;
+        border-right-width: 145px;
+        border-top-width: 110px;
+    }
+
+    .letter {
+        left: 12px;
+        right: 12px;
+        height: 175px;
+    }
+
+    .letter-content {
+        padding: 20px;
+        font-size: 0.82rem;
+        line-height: 1.5;
+    }
+
+    .letter-content h3 {
+        font-size: 1.3rem;
+    }
+
+    .envelope.open .letter {
+        transform: translateY(-125px);
+        height: 390px;
+    }
+
+
+    /* KEEP THE FINAL HEART MOBILE FRIENDLY */
+
+    .final-heart {
+        font-size: 5.5rem;
+    }
+
+}
