@@ -290,14 +290,14 @@ function openLoveLetter() {
                                 </p>
 
                                 <p>
-                                    The truth is, my favorite place in the world is
-                                    wherever you are. And my favorite part of this life
+                                    The truth is, my favorite place in the world
+                                    is slowly becoming you. And my favorite part of this life
                                     is getting to share it with you. ✨
                                 </p>
 
                                 <p>
-                                    Thank you for being my person, my comfort,
-                                    my safe place, and the love I keep choosing again and again.
+                                    Thank you for being my person, and which can turn into my comfort,
+                                    my safe place, and the love I want to keep choosing again and again.
                                 </p>
 
                                 <p class="signature">
