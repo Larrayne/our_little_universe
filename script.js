@@ -1,3 +1,5 @@
+const notificationEndpoint = "";
+
 const heartButton = document.getElementById("heartButton");
 const burstContainer = document.getElementById("burstContainer");
 
@@ -42,6 +44,12 @@ const questions = [
         question: "Are you ready for your surprise? 🎁",
         yes: "YESSS! 😍",
         no: "I’ll take that as a yes 😂"
+    },
+
+    {
+        question: "Can we go back to how it was before? 💜",
+        yes: "I wish we could ❤️",
+        no: "Let’s make new memories 💕"
     }
 ];
 
@@ -53,6 +61,16 @@ let noClicks = 0;
 // ❤️ HEART BURST
 
 heartButton.addEventListener("click", function () {
+
+    if (notificationEndpoint) {
+        fetch(notificationEndpoint, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ event: "heart_tapped" })
+        }).catch((error) => {
+            console.error("Could not send the heart-tap notification.", error);
+        });
+    }
 
     const rect = heartButton.getBoundingClientRect();
 
