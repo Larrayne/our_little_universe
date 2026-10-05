@@ -820,7 +820,7 @@ h1 {
     }
 
     .envelope.open .letter {
-        transform: translateY(-35px);
+        transform: translateY(-55px);
         height: 590px;
     }
 
